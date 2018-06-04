@@ -8,7 +8,7 @@ let rating = 3; //the stars rating value
 let openedCards = []; // array that holds the 2 opened cards
 let matchedCards = []; //array that holds he matched cards
 let moveCounter = 0;
-let secondTenth = 0; //tenth of seconds
+let secondTenth = 0; //milliseconds
 let seconds = 0;
 let minutes = 0;
 let hours = 0;
@@ -90,7 +90,7 @@ function noMatch(openedCards) {
     }
     setTimeout(function() {
         for (var i = 0; i < openedCards.length; i++) {
-            openedCards[i].classList.remove("show", "open", "unmatch", "shake", "flipInY");// the class flipInY is already added when the card was opened
+            openedCards[i].classList.remove("show", "open", "unmatch", "shake", "flipInY"); // the class flipInY is already added when the card was opened
         }
     }, 1000);
 
@@ -105,12 +105,13 @@ function markAsMatched(openedCards) {
 
 //------check if the opened cards are matching and return true if they match--------------------------------------------------------------------
 function checkMatch(openedCards) {
-  let a = $(openedCards[0]).is($(openedCards[1])); // the case when the same card is clicked twice we dont want to consider it as a match
-  let b = openedCards[0].children[0].className != openedCards[1].children[0].className;
+    let a = $(openedCards[0]).is($(openedCards[1])); // the case when the same card is clicked twice we dont want to consider it as a match
+    let b = openedCards[0].children[0].className != openedCards[1].children[0].className;
     if (a || b) {
         return false;
     } else {
-        return true    }
+        return true
+    }
 }
 
 //-------This function puts the opened cards in an array, check the matching and processes the cards depending on the match or no match. at last it increases the move counter -----------------------
@@ -162,7 +163,7 @@ function win() {
         //theAlerFunction() it shows the winning message and checked whether we want to restart the game or not, so if we press ok then the gme will restart .
         setTimeout(function theAlertFunction() {
             var c = confirm("Congratulations! you won! \n Your total moves: " + moveCounter + "moves. " +
-                gameTime  + "\n Your stars rating is " + rating  + " out of 3. \n Do you want to play again!");
+                gameTime + "\n Your stars rating is " + rating + " out of 3. \n Do you want to play again!");
             if (c == true) {
                 location.reload();
             }

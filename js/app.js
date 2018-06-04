@@ -134,7 +134,7 @@ function openCards(card) { //put the opened cards in an array that has up to 2 c
     }
 }
 
-//-----------timer function -------------
+//-----------timer function ----I learned how to make it from w3schools website---------
 function timer() {
     t = setInterval(function() {
         secondTenth++;

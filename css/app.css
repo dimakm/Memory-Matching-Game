@@ -82,16 +82,15 @@ h1 {
     font-size: 33px;
 }
 
-.deck .card.unmatch { // when the cards don't match make the background red
+.deck .card.unmatch { // when the cards don't match make the background color changes
     cursor: default;
     background: #f88379;
     font-size: 33px;
 }
 
-.deck .card.disable { // to prevent clicking on the opened card
+/*.deck .card.disable { // to prevent clicking on the opened card
   pointer-events: none;
-cursor:crosshair;
-}
+}*/
 
 /*
  * Styles for the Score Panel
@@ -120,6 +119,20 @@ cursor:crosshair;
     float: right;
     cursor: pointer;
 }
+
+/*------Responsiveness----*/
+
+@media only screen and (max-width: 800px) {
+  .deck .card {
+      width: 17vw;
+      height: 17vw;
+  }
+    .deck {
+        width: 95%;
+        min-height: 100vw;
+    }
+}
+
 
 
 /* Animation from the website theappguruz.com */
@@ -220,8 +233,7 @@ animation-duration: 1s;
 -webkit-animation-fill-mode: both;
 animation-fill-mode: both;
 }
-
-@keyframes shake {
+@-webkit-keyframes shake {
 0%, 100% {
 -webkit-transform: translate3d(0, 0, 0);
 transform: translate3d(0, 0, 0);
@@ -235,7 +247,7 @@ transform: translate3d(-10px, 0, 0);
 transform: translate3d(10px, 0, 0);
 }
 }
-@-webkit-keyframes shake {
+@keyframes shake {
 0%, 100% {
 -webkit-transform: translate3d(0, 0, 0);
 transform: translate3d(0, 0, 0);

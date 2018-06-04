@@ -3,7 +3,8 @@ by Dima Kroma.
 
 A FEND Udacity project
 
-How to Display
+How to Play:
+
 This is a memory matching card game. Your goal is to match each card with its pair. There are 8 pairs .
 Click on a card, remember its icon, then continue clicking other cards until you find its match. The game ends when all the pairs are matched.
 

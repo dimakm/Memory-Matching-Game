@@ -11,4 +11,5 @@ See your progress in the top area .
 when you finish the game  you'll get the statistics about how you played.
 
 You can play again by pressing the little arrow on the top right of the deck area.
-< a href="http://htmlpreview.github.io/?https://github.com/dimakm/Memory-Matching-Game/blob/master/index.html">Click here to play </a>
+
+[Click here](http://htmlpreview.github.io/?https://github.com/dimakm/Memory-Matching-Game/blob/master/index.html) to play

@@ -14,6 +14,7 @@ let minutes = 0;
 let hours = 0;
 let moves = $(".moves");
 
+//-----------------------------------------------------------------
 
 displayOnDeck(); //displays the cards on the page.
 
@@ -129,8 +130,6 @@ function openCards(card) { //put the opened cards in an array that has up to 2 c
     } else {
         openedCards.push(card);
         countMoves();
-
-
     }
 }
 
@@ -170,6 +169,7 @@ function win() {
         }, 500);
     }
 }
+
 //------------- Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
     var currentIndex = array.length,

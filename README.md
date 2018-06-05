@@ -21,18 +21,25 @@ Dependencies used in this project:
 
 In js/app.js file:
 
-  timer function made with some help from w3schools.com website where I learned to use setInterval
   Shuffle function from http://stackoverflow.com/a/2450976
   
+  timer function made with  help from w3schools.com website 
+
+--------------------  
   
 In css/app.css file:
 
   Animation from webkit.org 
+  
+--------------------
 
 And in addition to using the CSS from:
 
   https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css
 
   https://fonts.googleapis.com/css?family=Coda
+  
+ -------------------
+ Used Atom text editor 
 
 

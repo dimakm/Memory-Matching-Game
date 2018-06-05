@@ -15,8 +15,10 @@ You can play again by pressing the little arrow on the top right of the deck are
 
 [Click here](http://htmlpreview.github.io/?https://github.com/dimakm/Memory-Matching-Game/blob/master/index.html) to play
 
+----------------------------------------------
 
 Dependencies used in this project:
+
 In js/app.js file:
   timer function made with some help from w3schools.com website where I learned to use setInterval
   Shuffle function from http://stackoverflow.com/a/2450976

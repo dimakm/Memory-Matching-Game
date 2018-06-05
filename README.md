@@ -41,6 +41,6 @@ And in addition to using the CSS from:
   https://fonts.googleapis.com/css?family=Coda
   
  -------------------
- Used Atom text editor 
+ Used Atom text editor to develop this project
 
 

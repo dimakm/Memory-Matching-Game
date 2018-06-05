@@ -13,8 +13,7 @@ let seconds = 0;
 let minutes = 0;
 let hours = 0;
 let moves = $(".moves");
-
-//-----------------------------------------------------------------
+//---------------------------------------------
 
 displayOnDeck(); //displays the cards on the page.
 
@@ -61,8 +60,8 @@ function countMoves() {
         timer();
     }
     ratingStars(moveCounter); // change the stars rating depending on the moveCounter.
-
 }
+
 //---------Rating stars-----------------------------------------
 function ratingStars(moveCounter) {
     if (moveCounter > 0 && moveCounter <= 14) {
@@ -91,7 +90,7 @@ function noMatch(openedCards) {
     }
     setTimeout(function() {
         for (var i = 0; i < openedCards.length; i++) {
-            openedCards[i].classList.remove("show", "open", "unmatch", "shake", "flipInY"); // the class flipInY is already added when the card was opened
+            openedCards[i].classList.remove("show", "open", "unmatch", "shake", "flipInY");// the class flipInY is already added when the card was opened
         }
     }, 1000);
 
@@ -106,13 +105,12 @@ function markAsMatched(openedCards) {
 
 //------check if the opened cards are matching and return true if they match--------------------------------------------------------------------
 function checkMatch(openedCards) {
-    let a = $(openedCards[0]).is($(openedCards[1])); // the case when the same card is clicked twice we dont want to consider it as a match
-    let b = openedCards[0].children[0].className != openedCards[1].children[0].className;
+  let a = $(openedCards[0]).is($(openedCards[1])); // the case when the same card is clicked twice we dont want to consider it as a match
+  let b = openedCards[0].children[0].className != openedCards[1].children[0].className;
     if (a || b) {
         return false;
     } else {
-        return true
-    }
+        return true    }
 }
 
 //-------This function puts the opened cards in an array, check the matching and processes the cards depending on the match or no match. at last it increases the move counter -----------------------
@@ -130,10 +128,12 @@ function openCards(card) { //put the opened cards in an array that has up to 2 c
     } else {
         openedCards.push(card);
         countMoves();
+
+
     }
 }
 
-//-----------timer function ----I learned how to make it from w3schools website---------
+//-----------timer function made with some help from w3schools.com website where I learned to use setInterval -------------
 function timer() {
     t = setInterval(function() {
         secondTenth++;
@@ -162,14 +162,13 @@ function win() {
         //theAlerFunction() it shows the winning message and checked whether we want to restart the game or not, so if we press ok then the gme will restart .
         setTimeout(function theAlertFunction() {
             var c = confirm("Congratulations! you won! \n Your total moves: " + moveCounter + "moves. " +
-                gameTime + "\n Your stars rating is " + rating + " out of 3. \n Do you want to play again!");
+                gameTime  + "\n Your stars rating is " + rating  + " out of 3. \n Do you want to play again!");
             if (c == true) {
                 location.reload();
             }
         }, 500);
     }
 }
-
 //------------- Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
     var currentIndex = array.length,

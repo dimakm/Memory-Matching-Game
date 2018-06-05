@@ -29,9 +29,10 @@ In css/app.css file:
 
   Animation from webkit.org 
 
-And in addition to using the CSS from  
+And in addition to using the CSS from:
 
   https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css
+
   https://fonts.googleapis.com/css?family=Coda
 
 

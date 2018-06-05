@@ -21,15 +21,17 @@ Dependencies used in this project:
 
 In js/app.js file:
 
-  Shuffle function from http://stackoverflow.com/a/2450976
+  -Shuffle function from http://stackoverflow.com/a/2450976
   
-  timer function made with  help from w3schools.com website 
+  -timer function made with  help from w3schools.com website 
 
+  
   
 In css/app.css file:
 
-  Animation from webkit.org 
+  -Animation from webkit.org 
   
+
 
 
 And in addition to using the CSS from:

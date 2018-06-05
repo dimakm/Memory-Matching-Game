@@ -35,7 +35,6 @@ $(".fa-repeat").on('click', function() {
  *   - loop through each card and create its HTML
  *   - add each card's HTML to the page
  */
-
 function displayOnDeck() { // it will put the cards in an array then suffle them and put the shuffled cards in the ul we already have.
     var cardsList = []; //array that holds the shuffled cards
     var cardsArray = document.getElementsByClassName('card'); //array that hold the cards before shuffling
@@ -50,7 +49,6 @@ function displayOnDeck() { // it will put the cards in an array then suffle them
         deck.append("<li class = 'card' > " + shuffledCardsList[i] + "</li>");
     }
 }
-
 
 //----------The moves counter---------------
 function countMoves() {

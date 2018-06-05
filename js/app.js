@@ -75,7 +75,8 @@ function ratingStars(moveCounter) {
     }
 }
 
-//-----This function calls the openCards function that compares the opened cards and the win function that checks if the game is ended and all cards are matched ---------------------
+//-----This function calls the openCards function that compares the opened cards
+// and the win function that checks if the game is ended and all cards are matched ---------------------
 function startMatcher(card) {
     openCards(card);
     win();

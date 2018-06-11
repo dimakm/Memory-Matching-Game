@@ -62,9 +62,9 @@ function countMoves() {
 
 //---------Rating stars-----------------------------------------
 function ratingStars(moveCounter) {
-    if (moveCounter > 0 && moveCounter <= 14) {
+    if (moveCounter > 0 && moveCounter <= 20) {
         rating = 3;
-    } else if (moveCounter > 14 && moveCounter <= 20) {
+    } else if (moveCounter > 20 && moveCounter <= 24) {
         rating = 2;
         star3.removeClass("fa-star");
         star3.addClass("fa-star-o");

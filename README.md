@@ -13,7 +13,6 @@ when you finish the game  you'll get the statistics about how you played.
 
 You can play again by pressing the little arrow on the top right of the deck area.
 
-[Click here](http://htmlpreview.github.io/?https://github.com/dimakm/Memory-Matching-Game/blob/master/index.html) to play
 
 ----------------------------------------------
 
